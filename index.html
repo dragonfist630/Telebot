@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; URL=https://www.google.com">
-    <link rel="canonical" href="https://www.google.com">
+    <script>
+        // Get the current URL path
+        const path = window.location.pathname;
+
+        // Check the path and redirect accordingly
+        if (path === "/Telebot/webgl") {
+            window.location.href = "https://www.instagram.com";
+        } else {
+            window.location.href = "https://www.google.com";
+        }
+    </script>
 </head>
 <body>
-    <p>If you are not redirected automatically, <a href="https://www.google.com">click here</a>.</p>
+    <p>If you are not redirected automatically, follow these links:</p>
+    <ul>
+        <li><a href="https://www.google.com">Go to Google</a></li>
+        <li><a href="https://www.instagram.com">Go to Instagram</a></li>
+    </ul>
 </body>
 </html>
