@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-    <script>
-        // Get the current URL path
-        const path = window.location.pathname;
-
-        // Check the path and redirect accordingly
-        if (path === "/webgl") {
-            window.location.href = "https://github.com/dragonfist630/auth-tfjs?tab=readme-ov-file";
-        } else if(path === "/Telebot/cloudInfra"){
-             window.location.href = "https://github.com/404";
-        }
-        else {
-            window.location.href = "https://github.com/404";
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <script>
+    // Normalize the current URL path by removing any trailing slash
+    const path = window.location.pathname.replace(/\/$/, "");
+    
+    // Redirect based on the normalized path
+    if (path === "/Telebot/webgl") {
+      window.location.href = "https://github.com/dragonfist630/auth-tfjs?tab=readme-ov-file";
+    } else if (path === "/Telebot/cloudInfra") {
+      window.location.href = "https://github.com/404";
+    } else {
+      window.location.href = "https://github.com/404";
+    }
+  </script>
 </head>
 <body>
-    <p>If you are not redirected automatically, follow these links:</p>
-    <ul>
-        <li><a href="https://www.google.com">Go to Google</a></li>
-        <li><a href="https://www.instagram.com">Go to Instagram</a></li>
-    </ul>
+  <p>If you are not redirected automatically, follow these links:</p>
+  <ul>
+    <li><a href="https://www.google.com">Go to Google</a></li>
+    <li><a href="https://www.instagram.com">Go to Instagram</a></li>
+  </ul>
 </body>
 </html>
